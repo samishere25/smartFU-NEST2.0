@@ -1,0 +1,89 @@
+{
+  "session_id": "b8dd8346-bfff-4413-9daf-e7d41804bf8a",
+  "case_id": "b752059c-dc45-4b89-83f6-aa489890147f",
+  "started_at": "2026-01-28 12:46:13.784141",
+  "iterations": [
+    {
+      "iteration": 1,
+      "timestamp": "2026-01-28T12:46:20.277307",
+      "analysis": {
+        "case_id": "b752059c-dc45-4b89-83f6-aa489890147f",
+        "case_data": {
+          "suspect_drug": "KYNMOBI",
+          "adverse_event": "Dyspepsia",
+          "patient_age": 71,
+          "patient_sex": "M",
+          "drug_route": "Oral",
+          "drug_dose": "15 MG",
+          "reporter_type": "HP",
+          "event_date": null
+        },
+        "missing_fields": [
+          {
+            "field": "event_date",
+            "criticality": "HIGH"
+          }
+        ],
+        "risk_score": 0.35000000000000003,
+        "response_probability": 0.57,
+        "decision": "PROCEED",
+        "questions": [],
+        "reasoning": "This decision to **PROCEED**",
+        "messages": [
+          {
+            "agent": "DataCompleteness",
+            "analysis": "This is an analysis of an adverse event (AE) case report focusing on data quality and the safety impact of missing critical fields, specifically for the drug **KYNMOBI** (Apomorphine hydrochloride, usually administered via subcutaneous injection or sublingual film, but reported here as Oral) and the event **Dyspepsia**.\n\n## Analysis of Missing Critical Fields\n\nThe following critical fields are missing from the case report:\n\n| Missing Field | Safety Impact Explanation (Specific to KYNMOBI/Dyspepsia) |\n| :--- | :--- |\n| **Event Date** | **High Impact.** Without the date the event occurred, it is impossible to calculate the **Time to Onset (TTO)** relative to the drug start date. Dyspepsia is a common gastrointestinal (GI) side effect. Knowing if it occurred immediately (suggesting an acute reaction or intolerance) or after weeks/months (suggesting a cumulative effect or interaction) is crucial for assessing causality and determining if the event is dose-related or time-dependent. |\n| **Start Date of KYNMOBI** | **High Impact.** This date is essential for calculating the **latency period** (TTO). Without it, we cannot determine if the dyspepsia occurred *while* the patient was taking the drug, or if it was a pre-existing condition, or if it occurred after discontinuation. This severely compromises the ability to establish a temporal relationship, which is fundamental to causality assessment. |\n| **Outcome/Severity** | **High Impact.** While not explicitly listed as missing, the outcome (e.g., Recovered, Recovering, Fatal, Not Recovered) and severity (e.g., Mild, Moderate, Severe, requiring hospitalization) are vital for risk assessment. Dyspepsia is usually mild, but if it led to severe dehydration, hospitalization, or required drug discontinuation, the safety signal is much stronger and requires urgent regulatory action or label update. |\n| **Stop Date of KYNMOBI** | **Medium Impact.** This date is necessary to assess **dechallenge** (did the event improve after stopping the drug?) and **rechallenge** (did the event return if the drug was restarted?). A positive dechallenge/rechallenge significantly strengthens the causal link between KYNMOBI and the dyspepsia. |\n| **Indication for Use** | **Medium Impact.** KYNMOBI is used for \"off\" episodes"
+          },
+          {
+            "agent": "RiskAssessment",
+            "risk_score": 0.35000000000000003,
+            "category": "LOW",
+            "reasoning": "Case assessed as LOW risk (score: 0.35) based on event seriousness and data completeness."
+          },
+          {
+            "agent": "ResponseStrategy",
+            "response_probability": 0.57,
+            "reporter_type": "HP",
+            "reasoning": "Predicted 57% response rate for HP reporter with 1 missing fields."
+          },
+          {
+            "agent": "Escalation",
+            "decision": "PROCEED",
+            "reasoning": "This decision to **PROCEED**"
+          }
+        ],
+        "previous_confidence": 0.654
+      },
+      "confidence_metrics": {
+        "data_completeness_confidence": 0.675,
+        "risk_assessment_confidence": 0.775,
+        "response_reliability": 0.422,
+        "overall_confidence": 0.654,
+        "can_proceed": false,
+        "threshold": 0.85,
+        "gap_to_threshold": 0.196
+      },
+      "information_gain": 0.0,
+      "questions": [],
+      "decision": "PROCEED"
+    }
+  ],
+  "converged": true,
+  "convergence_reason": "DIMINISHING_RETURNS",
+  "convergence_explanation": "Last iteration gained only 0.0% confidence - not worthwhile to continue",
+  "completed_at": "2026-01-28 12:46:20.277413",
+  "total_iterations": 1,
+  "final_confidence": 0.654,
+  "summary": {
+    "total_iterations": 1,
+    "initial_confidence": 0.654,
+    "final_confidence": 0.654,
+    "total_confidence_gain": 0.0,
+    "gain_per_iteration": 0.0,
+    "total_questions_asked": 0,
+    "converged": true,
+    "convergence_reason": "DIMINISHING_RETURNS",
+    "efficiency_rating": "NEGLIGIBLE",
+    "duration_seconds": 6.493272
+  }
+}

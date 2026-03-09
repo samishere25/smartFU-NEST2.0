@@ -1,0 +1,100 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ML Models (exclude large trained models, keep model configs)
+*.pkl
+*.h5
+*.joblib
+!models/*.json
+
+# Environment variables (keep .env.example)
+.env
+.env.local
+backend/.env
+frontend/.env.local
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Node.js / Frontend
+node_modules/
+.next/
+out/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Docker
+docker-compose.override.yml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data files (keep small samples, exclude large files)
+data.csv
+*.xlsx
+*.xls
+uploads/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# Alembic
+alembic/versions/*.pyc
+backend.zip
+
+# Large data files (download separately)
+backend/data.csv
+backend/models/*.pkl
+
+# ML training artifacts
+catboost_info/
+multifeature_training.log
+
+# Runtime output
+nohup.out
+server.log

@@ -1,0 +1,1 @@
+["patient_age", "sex_encoded", "reporter_encoded", "age_group_encoded", "missing_count", "completeness_score", "event_length", "drug_length", "has_serious_keyword", "age_missing", "sex_missing", "route_missing", "dose_missing"]

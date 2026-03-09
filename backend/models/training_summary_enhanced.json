@@ -1,0 +1,24 @@
+{
+  "training_date": "2026-01-29T00:41:05.642652",
+  "total_cases": 80703,
+  "features_used": [
+    "Temporal (7 features)",
+    "Reporter History (5 features)",
+    "Drug-Specific (4 features)",
+    "Geographic (5 features)",
+    "Interactions (4 features)",
+    "Original (15 features)",
+    "TF-IDF (35 features)"
+  ],
+  "total_features": 75,
+  "response_model": {
+    "accuracy": 0.646956780333069,
+    "precision": 0.6304724500404297,
+    "recall": 0.5817522916222554,
+    "f1": 0.6051333222462444,
+    "auc": 0.6795406560890097,
+    "cv_auc_mean": 0.675360675211489,
+    "cv_auc_std": 0.003970397819862318
+  },
+  "enhancement": "Added temporal, reporter history, drug-specific, and geographic features"
+}

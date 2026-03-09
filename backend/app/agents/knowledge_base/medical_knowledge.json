@@ -1,0 +1,3506 @@
+{
+  "metadata": {
+    "total_documents": 202,
+    "sources": {
+      "who_guidelines": 6,
+      "fda_labels": 181,
+      "meddra": 15
+    },
+    "drugs_processed": [
+      "XANAX",
+      "LINZESS",
+      "BOSULIF",
+      "Unknown",
+      "Unknown",
+      "RIABNI",
+      "SPIRIVA",
+      "DILAUDID"
+    ],
+    "seriousness_distribution": {
+      "HIGH": 14,
+      "MEDIUM": 167,
+      "LOW": 21
+    }
+  },
+  "documents": [
+    {
+      "doc_id": "who_0000",
+      "source": "WHO_GUIDELINES",
+      "category": "FATAL",
+      "title": "WHO Serious Adverse Event Criteria: Fatal",
+      "content": "Any event that results in death. Events in this category are classified as HIGH seriousness and require 15 days expedited report. Key indicators include: death, fatal, died, mortality.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "medical_history",
+        "cause_of_death",
+        "hospitalization_dates",
+        "event_outcome",
+        "autopsy_results",
+        "event_date",
+        "patient_age"
+      ],
+      "regulatory_action": "15 days expedited report",
+      "keywords": [
+        "death",
+        "fatal",
+        "died",
+        "mortality"
+      ]
+    },
+    {
+      "doc_id": "who_0001",
+      "source": "WHO_GUIDELINES",
+      "category": "LIFE_THREATENING",
+      "title": "WHO Serious Adverse Event Criteria: Life Threatening",
+      "content": "Any event that places the patient at immediate risk of death. Events in this category are classified as HIGH seriousness and require 15 days expedited report. Key indicators include: life-threatening, cardiac arrest, respiratory failure, anaphylactic shock.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "icu_admission",
+        "event_date",
+        "patient_age",
+        "intervention_required"
+      ],
+      "regulatory_action": "15 days expedited report",
+      "keywords": [
+        "life-threatening",
+        "cardiac arrest",
+        "respiratory failure",
+        "anaphylactic shock"
+      ]
+    },
+    {
+      "doc_id": "who_0002",
+      "source": "WHO_GUIDELINES",
+      "category": "HOSPITALIZATION",
+      "title": "WHO Serious Adverse Event Criteria: Hospitalization",
+      "content": "Any event that requires or prolongs hospitalization. Events in this category are classified as HIGH seriousness and require 15 days expedited report. Key indicators include: hospitalization, hospital, admitted, ICU.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "event_date",
+        "patient_age"
+      ],
+      "regulatory_action": "15 days expedited report",
+      "keywords": [
+        "hospitalization",
+        "hospital",
+        "admitted",
+        "ICU"
+      ]
+    },
+    {
+      "doc_id": "who_0003",
+      "source": "WHO_GUIDELINES",
+      "category": "DISABILITY",
+      "title": "WHO Serious Adverse Event Criteria: Disability",
+      "content": "Any event that results in persistent or significant disability/incapacity. Events in this category are classified as HIGH seriousness and require 15 days expedited report. Key indicators include: disability, incapacity, permanent, persistent.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "event_date",
+        "patient_age"
+      ],
+      "regulatory_action": "15 days expedited report",
+      "keywords": [
+        "disability",
+        "incapacity",
+        "permanent",
+        "persistent"
+      ]
+    },
+    {
+      "doc_id": "who_0004",
+      "source": "WHO_GUIDELINES",
+      "category": "CONGENITAL_ANOMALY",
+      "title": "WHO Serious Adverse Event Criteria: Congenital Anomaly",
+      "content": "Any event that causes a congenital anomaly/birth defect. Events in this category are classified as HIGH seriousness and require 15 days expedited report. Key indicators include: congenital, birth defect, teratogenic, fetal.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "event_date",
+        "patient_age"
+      ],
+      "regulatory_action": "15 days expedited report",
+      "keywords": [
+        "congenital",
+        "birth defect",
+        "teratogenic",
+        "fetal"
+      ]
+    },
+    {
+      "doc_id": "who_0005",
+      "source": "WHO_GUIDELINES",
+      "category": "INTERVENTION_REQUIRED",
+      "title": "WHO Serious Adverse Event Criteria: Intervention Required",
+      "content": "Any event requiring medical intervention to prevent permanent damage. Events in this category are classified as HIGH seriousness and require 15 days expedited report. Key indicators include: intervention, prevent damage, emergency.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "event_date",
+        "patient_age"
+      ],
+      "regulatory_action": "15 days expedited report",
+      "keywords": [
+        "intervention",
+        "prevent damage",
+        "emergency"
+      ]
+    },
+    {
+      "doc_id": "fda_0006",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "BOXED_WARNING",
+      "title": "XANAX Boxed Warning",
+      "content": "WARNING: RISKS FROM CONCOMITANT USE WITH OPIOIDS; ABUSE, MISUSE, AND ADDICTION; and DEPENDENCE AND WITHDRAWAL REACTIONS \u2022 Concomitant use of benzodiazepines and opioids may result in profound sedation, respiratory depression, coma, and death. Reserve concomitant prescribing of these drugs for patients for whom alternative treatment options are inadequate. Limit dosages and durations to the minimum required. Follow patients for signs and symptoms of respiratory depression and sedation [see Warnings and Precautions (5.1) , Drug Interactions (7.1) ] . \u2022 The use of benzodiazepines, including XANAX, exposes users to risks of abuse, misuse, and addiction, which can lead to overdose or death. Abuse and misuse of benzodiazepines commonly involve concomitant use of other medications, alcohol, and/o",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Expedited reporting required"
+    },
+    {
+      "doc_id": "fda_0007",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Tachycardia - XANAX",
+      "content": "Tachycardia is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0008",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "And Increased - XANAX",
+      "content": "And Increased is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0009",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Dizziness - XANAX",
+      "content": "Dizziness is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0010",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "Gastrointestinal disorders",
+      "title": "Vomiting - XANAX",
+      "content": "Vomiting is a known adverse reaction associated with XANAX (xanax). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0011",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "Nervous system disorders",
+      "title": "Headache - XANAX",
+      "content": "Headache is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under Nervous system disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0012",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Seizure - XANAX",
+      "content": "Seizure is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0013",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Constipation - XANAX",
+      "content": "Constipation is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0014",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Other Increased - XANAX",
+      "content": "Other Increased is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0015",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Fatigue - XANAX",
+      "content": "Fatigue is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0016",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Pruritus - XANAX",
+      "content": "Pruritus is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0017",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Hypotension - XANAX",
+      "content": "Hypotension is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0018",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Diarrhea - XANAX",
+      "content": "Diarrhea is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0019",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Disorder Decreased - XANAX",
+      "content": "Disorder Decreased is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0020",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "Gastrointestinal disorders",
+      "title": "Nausea - XANAX",
+      "content": "Nausea is a known adverse reaction associated with XANAX (xanax). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0021",
+      "source": "FDA_LABEL",
+      "drug_name": "XANAX",
+      "generic_name": "xanax",
+      "category": "UNKNOWN",
+      "title": "Rash - XANAX",
+      "content": "Rash is a known adverse reaction associated with XANAX (xanax). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0022",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "BOXED_WARNING",
+      "title": "LINZESS Boxed Warning",
+      "content": "WARNING: RISK OF SERIOUS DEHYDRATION IN PEDIATRIC PATIENTS LESS THAN 2 YEARS OF AGE LINZESS is contraindicated in patients less than 2 years of age; in nonclinical studies in neonatal mice, administration of a single, clinically relevant adult oral dose of linaclotide caused deaths due to dehydration [see Contraindications ( 4 ), Warnings and Precautions ( 5.1 ), Use in Specific Populations ( 8.4 )]. WARNING: RISK OF SERIOUS DEHYDRATION IN PEDIATRIC PATIENTS LESS THAN 2 YEARS OF AGE See full prescribing information for complete boxed warning. LINZESS is contraindicated in patients less than 2 years of age; in neonatal mice, linaclotide caused deaths due to dehydration. ( 4 , 5.1 , 8.4 )",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Expedited reporting required"
+    },
+    {
+      "doc_id": "fda_0023",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Infection - LINZESS",
+      "content": "Infection is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0024",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Dehydration - LINZESS",
+      "content": "Dehydration is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0025",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "Gastrointestinal disorders",
+      "title": "Vomiting - LINZESS",
+      "content": "Vomiting is a known adverse reaction associated with LINZESS (linzess). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0026",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "Nervous system disorders",
+      "title": "Headache - LINZESS",
+      "content": "Headache is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under Nervous system disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0027",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Abdominal Pain - LINZESS",
+      "content": "Abdominal Pain is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0028",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Abdominal Distension - LINZESS",
+      "content": "Abdominal Distension is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0029",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Hemorrhage - LINZESS",
+      "content": "Hemorrhage is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0030",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Flatulence - LINZESS",
+      "content": "Flatulence is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0031",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Constipation - LINZESS",
+      "content": "Constipation is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0032",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Hypersensitivity - LINZESS",
+      "content": "Hypersensitivity is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0033",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Anaphylaxis - LINZESS",
+      "content": "Anaphylaxis is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0034",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Abdominal Discomfort - LINZESS",
+      "content": "Abdominal Discomfort is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0035",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Diarrhea - LINZESS",
+      "content": "Diarrhea is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0036",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "Gastrointestinal disorders",
+      "title": "Nausea - LINZESS",
+      "content": "Nausea is a known adverse reaction associated with LINZESS (linzess). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0037",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Pain - LINZESS",
+      "content": "Pain is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0038",
+      "source": "FDA_LABEL",
+      "drug_name": "LINZESS",
+      "generic_name": "linzess",
+      "category": "UNKNOWN",
+      "title": "Rash - LINZESS",
+      "content": "Rash is a known adverse reaction associated with LINZESS (linzess). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0039",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Pressure Increased - BOSULIF",
+      "content": "Pressure Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0040",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Pneumonia - BOSULIF",
+      "content": "Pneumonia is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0041",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "Gastrointestinal disorders",
+      "title": "Vomiting - BOSULIF",
+      "content": "Vomiting is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0042",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "Nervous system disorders",
+      "title": "Headache - BOSULIF",
+      "content": "Headache is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under Nervous system disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0043",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Phosphorus Decreased - BOSULIF",
+      "content": "Phosphorus Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0044",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Glutamyltransferase Increased - BOSULIF",
+      "content": "Glutamyltransferase Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0045",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Anemia - BOSULIF",
+      "content": "Anemia is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0046",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Bilirubin Increased - BOSULIF",
+      "content": "Bilirubin Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0047",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Hepatotoxicity - BOSULIF",
+      "content": "Hepatotoxicity is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0048",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Dyspnea - BOSULIF",
+      "content": "Dyspnea is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0049",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Ast Increased - BOSULIF",
+      "content": "Ast Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0050",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Cpk Increased - BOSULIF",
+      "content": "Cpk Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0051",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Neutropenia - BOSULIF",
+      "content": "Neutropenia is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0052",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Abdominal Discomfort - BOSULIF",
+      "content": "Abdominal Discomfort is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0053",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Anaphylactic - BOSULIF",
+      "content": "Anaphylactic is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0054",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Potassium Decreased - BOSULIF",
+      "content": "Potassium Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0055",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Enzymes Increased - BOSULIF",
+      "content": "Enzymes Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0056",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Glucose Increased - BOSULIF",
+      "content": "Glucose Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0057",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Calcium Decreased - BOSULIF",
+      "content": "Calcium Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0058",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Aminotransferase Increased - BOSULIF",
+      "content": "Aminotransferase Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0059",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Test Increased - BOSULIF",
+      "content": "Test Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0060",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Urate Increased - BOSULIF",
+      "content": "Urate Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0061",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Enzyme Increased - BOSULIF",
+      "content": "Enzyme Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0062",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Transaminases Increased - BOSULIF",
+      "content": "Transaminases Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0063",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Potassium Increased - BOSULIF",
+      "content": "Potassium Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0064",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Fraction Decreased - BOSULIF",
+      "content": "Fraction Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0065",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Constipation - BOSULIF",
+      "content": "Constipation is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0066",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Thrombocytopenia - BOSULIF",
+      "content": "Thrombocytopenia is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0067",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Magnesium Increased - BOSULIF",
+      "content": "Magnesium Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0068",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Phosphatase Increased - BOSULIF",
+      "content": "Phosphatase Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0069",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Hypertension - BOSULIF",
+      "content": "Hypertension is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0070",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "Gastrointestinal disorders",
+      "title": "Nausea - BOSULIF",
+      "content": "Nausea is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0071",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Pain - BOSULIF",
+      "content": "Pain is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0072",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Unconjugated Increased - BOSULIF",
+      "content": "Unconjugated Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0073",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Hemorrhage - BOSULIF",
+      "content": "Hemorrhage is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0074",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Dehydration - BOSULIF",
+      "content": "Dehydration is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0075",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Dizziness - BOSULIF",
+      "content": "Dizziness is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0076",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Sodium Decreased - BOSULIF",
+      "content": "Sodium Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0077",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Cough - BOSULIF",
+      "content": "Cough is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0078",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Hemoglobin Decreased - BOSULIF",
+      "content": "Hemoglobin Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0079",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Count Decreased - BOSULIF",
+      "content": "Count Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0080",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Alt Increased - BOSULIF",
+      "content": "Alt Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0081",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Lipase Increased - BOSULIF",
+      "content": "Lipase Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0082",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Fatigue - BOSULIF",
+      "content": "Fatigue is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0083",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Kinase Increased - BOSULIF",
+      "content": "Kinase Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0084",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Systolic Increased - BOSULIF",
+      "content": "Systolic Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0085",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Platelets Decreased - BOSULIF",
+      "content": "Platelets Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0086",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Abdominal Pain - BOSULIF",
+      "content": "Abdominal Pain is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0087",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Amylase Increased - BOSULIF",
+      "content": "Amylase Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0088",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Abdominal Tenderness - BOSULIF",
+      "content": "Abdominal Tenderness is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0089",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Infection - BOSULIF",
+      "content": "Infection is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0090",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Sodium Increased - BOSULIF",
+      "content": "Sodium Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0091",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Chest Pain - BOSULIF",
+      "content": "Chest Pain is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0092",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Lymphocyte Decreased - BOSULIF",
+      "content": "Lymphocyte Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0093",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Chest Discomfort - BOSULIF",
+      "content": "Chest Discomfort is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0094",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Creatinine Increased - BOSULIF",
+      "content": "Creatinine Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0095",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Disorders Decreased - BOSULIF",
+      "content": "Disorders Decreased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0096",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Hypersensitivity - BOSULIF",
+      "content": "Hypersensitivity is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0097",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Conjugated Increased - BOSULIF",
+      "content": "Conjugated Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0098",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Pruritus - BOSULIF",
+      "content": "Pruritus is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0099",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Diarrhea - BOSULIF",
+      "content": "Diarrhea is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0100",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Troponin Increased - BOSULIF",
+      "content": "Troponin Increased is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0101",
+      "source": "FDA_LABEL",
+      "drug_name": "BOSULIF",
+      "generic_name": "bosulif",
+      "category": "UNKNOWN",
+      "title": "Rash - BOSULIF",
+      "content": "Rash is a known adverse reaction associated with BOSULIF (bosulif). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0102",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "BOXED_WARNING",
+      "title": "Unknown Boxed Warning",
+      "content": "WARNING: RISKS FROM CONCOMITANT USE WITH OPIOIDS; ABUSE, MISUSE, AND ADDICTION; and DEPENDENCE AND WITHDRAWAL REACTIONS Concomitant use of benzodiazepines and opioids may result in profound sedation, respiratory depression, coma, and death. Reserve concomitant prescribing of these drugs for patients for whom alternative treatment options are inadequate. Limit dosages and durations to the minimum required. Follow patients for signs and symptoms of respiratory depression and sedation (see WARNINGS and PRECAUTIONS ). The use of benzodiazepines, including lorazepam, exposes users to risks of abuse, misuse, and addiction, which can lead to overdose or death. Abuse and misuse of benzodiazepines commonly involve concomitant use of other medications, alcohol, and/or illicit substances, which is as",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Expedited reporting required"
+    },
+    {
+      "doc_id": "fda_0103",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Dizziness - Unknown",
+      "content": "Dizziness is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0104",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "Nervous system disorders",
+      "title": "Headache - Unknown",
+      "content": "Headache is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under Nervous system disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0105",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Unsteadiness Increased - Unknown",
+      "content": "Unsteadiness Increased is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0106",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Seizure - Unknown",
+      "content": "Seizure is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0107",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Convulsion - Unknown",
+      "content": "Convulsion is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0108",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Constipation - Unknown",
+      "content": "Constipation is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0109",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Hypersensitivity - Unknown",
+      "content": "Hypersensitivity is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0110",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Thrombocytopenia - Unknown",
+      "content": "Thrombocytopenia is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0111",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Fatigue - Unknown",
+      "content": "Fatigue is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0112",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Tremor - Unknown",
+      "content": "Tremor is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0113",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "UNKNOWN",
+      "title": "Hypotension - Unknown",
+      "content": "Hypotension is a known adverse reaction associated with Unknown (unknown). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0114",
+      "source": "FDA_LABEL",
+      "drug_name": "Unknown",
+      "generic_name": "unknown",
+      "category": "Gastrointestinal disorders",
+      "title": "Nausea - Unknown",
+      "content": "Nausea is a known adverse reaction associated with Unknown (unknown). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0115",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "BOXED_WARNING",
+      "title": "RIABNI Boxed Warning",
+      "content": "WARNING: FATAL INFUSION-RELATED REACTIONS, SEVERE MUCOCUTANEOUS REACTIONS, HEPATITIS B VIRUS REACTIVATION and PROGRESSIVE MULTIFOCAL LEUKOENCEPHALOPATHY WARNING: FATAL INFUSION-RELATED REACTIONS, SEVERE MUCOCUTANEOUS REACTIONS, HEPATITIS B VIRUS REACTIVATION and PROGRESSIVE MULTIFOCAL LEUKOENCEPHALOPATHY See full prescribing information for complete boxed warning. Fatal infusion-related reactions within 24 hours of rituximab infusion; approximately 80% of fatal reactions occurred with first infusion. Monitor patients and discontinue RIABNI infusion for severe reactions ( 5.1 ). Severe mucocutaneous reactions, some with fatal outcomes ( 5.2 ). Hepatitis B virus (HBV) reactivation, in some cases resulting in fulminant hepatitis, hepatic failure, and death ( 5.3 ). Progressive multifocal leuk",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Expedited reporting required"
+    },
+    {
+      "doc_id": "fda_0116",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Pneumonia - RIABNI",
+      "content": "Pneumonia is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0117",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "Gastrointestinal disorders",
+      "title": "Vomiting - RIABNI",
+      "content": "Vomiting is a known adverse reaction associated with RIABNI (riabni). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0118",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "Nervous system disorders",
+      "title": "Headache - RIABNI",
+      "content": "Headache is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under Nervous system disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0119",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "4 Increased - RIABNI",
+      "content": "4 Increased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0120",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Placebo Decreased - RIABNI",
+      "content": "Placebo Decreased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0121",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Anemia - RIABNI",
+      "content": "Anemia is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0122",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Chest Tightness - RIABNI",
+      "content": "Chest Tightness is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0123",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Dyspnea - RIABNI",
+      "content": "Dyspnea is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0124",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Neutropenia - RIABNI",
+      "content": "Neutropenia is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0125",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Reported Increased - RIABNI",
+      "content": "Reported Increased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0126",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Tachycardia - RIABNI",
+      "content": "Tachycardia is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0127",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Reactions Decreased - RIABNI",
+      "content": "Reactions Decreased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0128",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Thrombocytopenia - RIABNI",
+      "content": "Thrombocytopenia is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0129",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "At Increased - RIABNI",
+      "content": "At Increased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0130",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Hypertension - RIABNI",
+      "content": "Hypertension is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0131",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Hypotension - RIABNI",
+      "content": "Hypotension is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0132",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "Gastrointestinal disorders",
+      "title": "Nausea - RIABNI",
+      "content": "Nausea is a known adverse reaction associated with RIABNI (riabni). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0133",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Pain - RIABNI",
+      "content": "Pain is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0134",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "With Increased - RIABNI",
+      "content": "With Increased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0135",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Dizziness - RIABNI",
+      "content": "Dizziness is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0136",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Cough - RIABNI",
+      "content": "Cough is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0137",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "And Decreased - RIABNI",
+      "content": "And Decreased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0138",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Fever - RIABNI",
+      "content": "Fever is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0139",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Fatigue - RIABNI",
+      "content": "Fatigue is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0140",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Tremor - RIABNI",
+      "content": "Tremor is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0141",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Abdominal Pain - RIABNI",
+      "content": "Abdominal Pain is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0142",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Infection - RIABNI",
+      "content": "Infection is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0143",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Irrs Decreased - RIABNI",
+      "content": "Irrs Decreased is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0144",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Sepsis - RIABNI",
+      "content": "Sepsis is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0145",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Pruritus - RIABNI",
+      "content": "Pruritus is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0146",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Diarrhea - RIABNI",
+      "content": "Diarrhea is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0147",
+      "source": "FDA_LABEL",
+      "drug_name": "RIABNI",
+      "generic_name": "riabni",
+      "category": "UNKNOWN",
+      "title": "Rash - RIABNI",
+      "content": "Rash is a known adverse reaction associated with RIABNI (riabni). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0148",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Pressure Increased - SPIRIVA",
+      "content": "Pressure Increased is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0149",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Tachycardia - SPIRIVA",
+      "content": "Tachycardia is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0150",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Chest Pain - SPIRIVA",
+      "content": "Chest Pain is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0151",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Infection - SPIRIVA",
+      "content": "Infection is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0152",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "Gastrointestinal disorders",
+      "title": "Vomiting - SPIRIVA",
+      "content": "Vomiting is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0153",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "Nervous system disorders",
+      "title": "Headache - SPIRIVA",
+      "content": "Headache is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under Nervous system disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0154",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Abdominal Pain - SPIRIVA",
+      "content": "Abdominal Pain is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0155",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Infection Increased - SPIRIVA",
+      "content": "Infection Increased is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0156",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Dizziness - SPIRIVA",
+      "content": "Dizziness is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0157",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Cough - SPIRIVA",
+      "content": "Cough is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0158",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Constipation - SPIRIVA",
+      "content": "Constipation is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0159",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Hypersensitivity - SPIRIVA",
+      "content": "Hypersensitivity is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0160",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Pruritus - SPIRIVA",
+      "content": "Pruritus is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0161",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Pain - SPIRIVA",
+      "content": "Pain is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0162",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Rash - SPIRIVA",
+      "content": "Rash is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0163",
+      "source": "FDA_LABEL",
+      "drug_name": "SPIRIVA",
+      "generic_name": "spiriva",
+      "category": "UNKNOWN",
+      "title": "Dehydration - SPIRIVA",
+      "content": "Dehydration is a known adverse reaction associated with SPIRIVA (spiriva). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0164",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "BOXED_WARNING",
+      "title": "DILAUDID Boxed Warning",
+      "content": "WARNING: SERIOUS AND LIFE-THREATENING RISKS FROM USE OF DILAUDID Risk of Medication Errors Ensure accuracy when prescribing, dispensing, and administering DILAUDID Oral Solution. Dosing errors due to confusion between mg and mL, and other hydromorphone oral solutions of different concentrations can result in accidental overdose and death [see Dosage and Administration (2.1) , Warnings and Precautions (5.1) ]. Addiction, Abuse, and Misuse Because the use of DILAUDID Oral Solution and Dilaudid Tablets expose patients and other users to the risks of opioid addiction, abuse, and misuse, which can lead to overdose and death, assess each patient's risk prior to prescribing and reassess all patients regularly for the development of these behaviors and conditions [see Warnings and Precautions (5.2",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Expedited reporting required"
+    },
+    {
+      "doc_id": "fda_0165",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "Gastrointestinal disorders",
+      "title": "Vomiting - DILAUDID",
+      "content": "Vomiting is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0166",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "Nervous system disorders",
+      "title": "Headache - DILAUDID",
+      "content": "Headache is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under Nervous system disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0167",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Dyspnea - DILAUDID",
+      "content": "Dyspnea is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0168",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Enzymes Increased - DILAUDID",
+      "content": "Enzymes Increased is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0169",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Tachycardia - DILAUDID",
+      "content": "Tachycardia is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0170",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Constipation - DILAUDID",
+      "content": "Constipation is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0171",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Anaphylaxis - DILAUDID",
+      "content": "Anaphylaxis is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0172",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Hypertension - DILAUDID",
+      "content": "Hypertension is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0173",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Hypotension - DILAUDID",
+      "content": "Hypotension is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0174",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "Gastrointestinal disorders",
+      "title": "Nausea - DILAUDID",
+      "content": "Nausea is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as LOW seriousness under Gastrointestinal disorders. Standard reporting. Manufactured by Unknown.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "fda_0175",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Pain - DILAUDID",
+      "content": "Pain is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0176",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Dizziness - DILAUDID",
+      "content": "Dizziness is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0177",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Seizure - DILAUDID",
+      "content": "Seizure is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0178",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Convulsion - DILAUDID",
+      "content": "Convulsion is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0179",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Fatigue - DILAUDID",
+      "content": "Fatigue is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0180",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Tremor - DILAUDID",
+      "content": "Tremor is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0181",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Abdominal Pain - DILAUDID",
+      "content": "Abdominal Pain is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0182",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Bradycardia - DILAUDID",
+      "content": "Bradycardia is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0183",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Hypersensitivity - DILAUDID",
+      "content": "Hypersensitivity is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0184",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Pruritus - DILAUDID",
+      "content": "Pruritus is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0185",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Diarrhea - DILAUDID",
+      "content": "Diarrhea is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "fda_0186",
+      "source": "FDA_LABEL",
+      "drug_name": "DILAUDID",
+      "generic_name": "dilaudid",
+      "category": "UNKNOWN",
+      "title": "Rash - DILAUDID",
+      "content": "Rash is a known adverse reaction associated with DILAUDID (dilaudid). This event is classified as MEDIUM seriousness under UNKNOWN. Standard monitoring. Manufactured by Unknown.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard monitoring"
+    },
+    {
+      "doc_id": "meddra_0187",
+      "source": "MEDDRA",
+      "category": "Nervous system disorders",
+      "title": "Headache - Nervous system disorders",
+      "content": "Headache is classified under MedDRA System Organ Class: Nervous system disorders. This type of adverse event typically has MEDIUM seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "neurological_exam",
+        "drug_dose",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "imaging"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0188",
+      "source": "MEDDRA",
+      "category": "Gastrointestinal disorders",
+      "title": "Nausea - Gastrointestinal disorders",
+      "content": "Nausea is classified under MedDRA System Organ Class: Gastrointestinal disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0189",
+      "source": "MEDDRA",
+      "category": "Gastrointestinal disorders",
+      "title": "Vomiting - Gastrointestinal disorders",
+      "content": "Vomiting is classified under MedDRA System Organ Class: Gastrointestinal disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0190",
+      "source": "MEDDRA",
+      "category": "Musculoskeletal disorders",
+      "title": "Joint Swelling - Musculoskeletal disorders",
+      "content": "Joint Swelling is classified under MedDRA System Organ Class: Musculoskeletal disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0191",
+      "source": "MEDDRA",
+      "category": "Ocular disorders",
+      "title": "Miosis - Ocular disorders",
+      "content": "Miosis is classified under MedDRA System Organ Class: Ocular disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0192",
+      "source": "MEDDRA",
+      "category": "Musculoskeletal disorders",
+      "title": "Neck Pain - Musculoskeletal disorders",
+      "content": "Neck Pain is classified under MedDRA System Organ Class: Musculoskeletal disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0193",
+      "source": "MEDDRA",
+      "category": "Gastrointestinal disorders",
+      "title": "Dyspepsia - Gastrointestinal disorders",
+      "content": "Dyspepsia is classified under MedDRA System Organ Class: Gastrointestinal disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0194",
+      "source": "MEDDRA",
+      "category": "Renal disorders",
+      "title": "Blood Creatinine Increased - Renal disorders",
+      "content": "Blood Creatinine Increased is classified under MedDRA System Organ Class: Renal disorders. This type of adverse event typically has HIGH seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "creatinine",
+        "gfr",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "urine_output"
+      ],
+      "regulatory_action": "Expedited reporting"
+    },
+    {
+      "doc_id": "meddra_0195",
+      "source": "MEDDRA",
+      "category": "Neoplasms",
+      "title": "Bladder Cancer - Neoplasms",
+      "content": "Bladder Cancer is classified under MedDRA System Organ Class: Neoplasms. This type of adverse event typically has HIGH seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "event_date",
+        "patient_age"
+      ],
+      "regulatory_action": "Expedited reporting"
+    },
+    {
+      "doc_id": "meddra_0196",
+      "source": "MEDDRA",
+      "category": "Psychiatric disorders",
+      "title": "Drug Abuse - Psychiatric disorders",
+      "content": "Drug Abuse is classified under MedDRA System Organ Class: Psychiatric disorders. This type of adverse event typically has MEDIUM seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0197",
+      "source": "MEDDRA",
+      "category": "Metabolic disorders",
+      "title": "Weight Increased - Metabolic disorders",
+      "content": "Weight Increased is classified under MedDRA System Organ Class: Metabolic disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0198",
+      "source": "MEDDRA",
+      "category": "General disorders",
+      "title": "Therapeutic Response Decreased - General disorders",
+      "content": "Therapeutic Response Decreased is classified under MedDRA System Organ Class: General disorders. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0199",
+      "source": "MEDDRA",
+      "category": "Cardiac disorders",
+      "title": "Angioplasty - Cardiac disorders",
+      "content": "Angioplasty is classified under MedDRA System Organ Class: Cardiac disorders. This type of adverse event typically has HIGH seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "HIGH",
+      "critical_fields": [
+        "concomitant_meds",
+        "drug_dose",
+        "ecg_results",
+        "medical_history",
+        "hospitalization_dates",
+        "event_outcome",
+        "event_date",
+        "patient_age",
+        "cardiac_biomarkers"
+      ],
+      "regulatory_action": "Expedited reporting"
+    },
+    {
+      "doc_id": "meddra_0200",
+      "source": "MEDDRA",
+      "category": "Psychiatric disorders",
+      "title": "Feeling Abnormal - Psychiatric disorders",
+      "content": "Feeling Abnormal is classified under MedDRA System Organ Class: Psychiatric disorders. This type of adverse event typically has MEDIUM seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "MEDIUM",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    },
+    {
+      "doc_id": "meddra_0201",
+      "source": "MEDDRA",
+      "category": "Product issues",
+      "title": "Drug Dose Omission By Device - Product issues",
+      "content": "Drug Dose Omission By Device is classified under MedDRA System Organ Class: Product issues. This type of adverse event typically has LOW seriousness level. Standard pharmacovigilance reporting guidelines apply.",
+      "seriousness": "LOW",
+      "critical_fields": [
+        "event_date",
+        "patient_age",
+        "drug_dose",
+        "event_outcome"
+      ],
+      "regulatory_action": "Standard reporting"
+    }
+  ]
+}

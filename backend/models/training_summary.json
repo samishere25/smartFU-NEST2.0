@@ -1,0 +1,67 @@
+{
+  "training_date": "2026-02-13T22:50:59.008465",
+  "model_version": "1.0-complete",
+  "total_cases": 80703,
+  "total_features": 32,
+  "feature_breakdown": {
+    "core": 7,
+    "reporter_intelligence": 6,
+    "temporal": 9,
+    "geographic": 5,
+    "risk": 1,
+    "interactions": 4
+  },
+  "performance": {
+    "accuracy": 0.6438342585249802,
+    "precision": 0.650635593220339,
+    "recall": 0.6123629112662013,
+    "f1": 0.630919363122753,
+    "auc": 0.6650088223403906,
+    "cv_auc_mean": 0.6702074991465468,
+    "cv_auc_std": 0.004663130527910937,
+    "baseline": 0.5028747026169706,
+    "improvement_pct": 28.03075103489061
+  },
+  "top_10_features": [
+    {
+      "feature": "geographic_credibility_interaction",
+      "importance": 0.13447055248933196
+    },
+    {
+      "feature": "temporal_reporter_interaction",
+      "importance": 0.1247897997864803
+    },
+    {
+      "feature": "reporter_quality_score",
+      "importance": 0.12058283505125347
+    },
+    {
+      "feature": "reporter_avg_response_time",
+      "importance": 0.1168672768926368
+    },
+    {
+      "feature": "reporter_credibility",
+      "importance": 0.10999142803939459
+    },
+    {
+      "feature": "reporter_historical_rate",
+      "importance": 0.09941336881280875
+    },
+    {
+      "feature": "reporter_risk_interaction",
+      "importance": 0.06171132703936629
+    },
+    {
+      "feature": "reporter_type_frequency",
+      "importance": 0.05420431570406846
+    },
+    {
+      "feature": "reporter_encoded",
+      "importance": 0.05270975997570602
+    },
+    {
+      "feature": "patient_age",
+      "importance": 0.04760604101292754
+    }
+  ]
+}

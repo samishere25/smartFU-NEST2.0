@@ -1,0 +1,26 @@
+{
+  "patient_age": {
+    "total_reward": 12.0,
+    "ask_count": 2,
+    "answer_count": 2,
+    "last_updated": "2026-02-14T17:25:51.263394"
+  },
+  "event_date": {
+    "total_reward": 6.0,
+    "ask_count": 3,
+    "answer_count": 3,
+    "last_updated": "2026-02-14T17:55:46.208844"
+  },
+  "event_outcome": {
+    "total_reward": 4.0,
+    "ask_count": 2,
+    "answer_count": 2,
+    "last_updated": "2026-02-14T17:55:59.255960"
+  },
+  "drug_dose": {
+    "total_reward": 4.0,
+    "ask_count": 2,
+    "answer_count": 2,
+    "last_updated": "2026-02-14T17:56:05.191774"
+  }
+}

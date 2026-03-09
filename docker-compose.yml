@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: smartfu-postgres
+    environment:
+      POSTGRES_USER: smartfu_user
+      POSTGRES_PASSWORD: smartfu_dev_password
+      POSTGRES_DB: smartfu
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-pgvector.sh:/docker-entrypoint-initdb.d/init-pgvector.sh
+    networks:
+      - smartfu-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: smartfu-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - smartfu-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  smartfu-network:
+    driver: bridge
